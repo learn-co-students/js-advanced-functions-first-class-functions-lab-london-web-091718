@@ -6,9 +6,8 @@ const returnLastTwoDrivers = (array) => [array[array.length -2], array[array.len
 const selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers]
 
 function createFareMultiplier(num) {
-  return function(fare) {
-    return fare * num
-  }
+  return (fare) => fare * num // used arrow syntax
+
 }
 
 const fareDoubler = createFareMultiplier(2);
